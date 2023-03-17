@@ -1,8 +1,14 @@
 #include <iostream>
+#include "gamecontroller.h"
 using namespace std;
 
+
+
 int main() {
-    cout << "Hello, World" << endl;
+
+    gamecontroller controller;
+
+    controller.launch();
 
     return 0;
 }
