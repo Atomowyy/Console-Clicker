@@ -7,17 +7,18 @@
 
 #include <iostream>
 #include <conio.h>
+#include "game_model.h"
 
 class gamecontroller {
 
 public:
 
-    gamecontroller();
+    explicit gamecontroller(game_model& model);
     void launch();
     void update();
 
 private:
-    int points;
+    game_model& model;
 };
 
 

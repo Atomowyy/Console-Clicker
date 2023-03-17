@@ -61,6 +61,12 @@ build CMakeFiles/Example.dir/gamecontroller.cpp.obj: CXX_COMPILER__Example_Debug
   OBJECT_DIR = CMakeFiles\Example.dir
   OBJECT_FILE_DIR = CMakeFiles\Example.dir
 
+build CMakeFiles/Example.dir/game_model.cpp.obj: CXX_COMPILER__Example_Debug D$:/Projekty/PO/Example/game_model.cpp || cmake_object_order_depends_target_Example
+  DEP_FILE = CMakeFiles\Example.dir\game_model.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Example.dir
+  OBJECT_FILE_DIR = CMakeFiles\Example.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Example
@@ -69,7 +75,7 @@ build CMakeFiles/Example.dir/gamecontroller.cpp.obj: CXX_COMPILER__Example_Debug
 #############################################
 # Link the executable Example.exe
 
-build Example.exe: CXX_EXECUTABLE_LINKER__Example_Debug CMakeFiles/Example.dir/main.cpp.obj CMakeFiles/Example.dir/gamecontroller.cpp.obj
+build Example.exe: CXX_EXECUTABLE_LINKER__Example_Debug CMakeFiles/Example.dir/main.cpp.obj CMakeFiles/Example.dir/gamecontroller.cpp.obj CMakeFiles/Example.dir/game_model.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Example.dir

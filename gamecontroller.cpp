@@ -5,8 +5,7 @@
 #include "gamecontroller.h"
 
 
-gamecontroller::gamecontroller() {
-    this->points=0;
+gamecontroller::gamecontroller(game_model& model) : model(model)  {
 }
 
 void gamecontroller::launch() {
@@ -17,16 +16,16 @@ void gamecontroller::launch() {
         key = _getch();
         if(key==13) {
 
-            this->points ++;
+            this->model.add_points(1);
             this->update();
         }
     }
     while(key != 27);
 }
-
+//zadanie: przenieś update do gameview(nowa klasa)
 void gamecontroller::update() {
     system("cls");
     std::cout << "Console clicker!" << std::endl;
-    std::cout <<"Points: "<< points << std::endl;
+    std::cout <<"Points: "<< model.get_points() << std::endl;
 }
 
