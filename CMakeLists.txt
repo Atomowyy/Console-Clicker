@@ -3,4 +3,4 @@ project(Example)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Example main.cpp)
+add_executable(Example main.cpp gamecontroller.cpp gamecontroller.h)
