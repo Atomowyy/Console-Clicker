@@ -8,17 +8,18 @@
 #include <iostream>
 #include <conio.h>
 #include "game_model.h"
-
+#include "game_view.h"
 class gamecontroller {
 
 public:
 
-    explicit gamecontroller(game_model& model);
+    explicit gamecontroller(game_model& model, game_view& view);
+
     void launch();
-    void update();
 
 private:
     game_model& model;
+    game_view& view;
 };
 
 

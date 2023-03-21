@@ -4,7 +4,7 @@
 
 #ifndef EXAMPLE_GAME_MODEL_H
 #define EXAMPLE_GAME_MODEL_H
-
+//#include "game_view.h"
 
 class game_model {
 

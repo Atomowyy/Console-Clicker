@@ -7,7 +7,6 @@
 int game_model::get_points() {
     return points;
 }
-
 void game_model::add_points(int p) {
     this->points += p;
 }
