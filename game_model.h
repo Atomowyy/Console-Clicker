@@ -10,10 +10,19 @@ class game_model {
 
 public:
     int get_points();
+    int get_level();
+    int get_progress();
+    int get_multiplier();
     void add_points(int p);
+    void increase_level();
+    void reset_progress();
+    void increase_progress();
 
 private:
-    int points;
+    int points = 0;
+    int level = 0;
+    int progress = 0;
+    int multiplier = 1;
 
 };
 

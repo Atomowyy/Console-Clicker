@@ -7,6 +7,28 @@
 int game_model::get_points() {
     return points;
 }
+int game_model::get_progress() {
+    return progress;
+}
+int game_model::get_level() {
+    return level;
+}
+int game_model::get_multiplier() {
+    return 0;
+}
 void game_model::add_points(int p) {
     this->points += p;
 }
+void game_model::increase_level() {
+    this->level +=1;
+}
+void game_model::increase_progress() {
+    this->progress += 1;
+}
+void game_model::reset_progress() {
+    this->progress = 0;
+}
+
+
+
+
