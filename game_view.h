@@ -12,7 +12,7 @@
 
 class game_view {
 public:
-    void display(int p, int lvl, int progress);
+    void display(int p, int lvl, int progress, int ppc);
 private:
     game_model model;
 };

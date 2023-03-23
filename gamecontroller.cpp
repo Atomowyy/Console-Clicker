@@ -16,18 +16,17 @@ void gamecontroller::launch() {
         if (key == 13) {
             if(model.get_progress()==10)
             {
-                model.reset_progress();
-                model.increase_level();
-
+                lvl_up();
             }
-            this->model.add_points(1);
+            this->model.add_points(1*model.get_multiplier());
             this->model.increase_progress();
-            this->view.display(model.get_points(), model.get_level(), model.get_progress());
+            this->view.display(model.get_points(), model.get_level(), model.get_progress(), model.get_multiplier());
 
         }
     } while (key != 27);
 }
 
 void gamecontroller::lvl_up() {
-    std::cout<<"LVL UP!"<<std::endl;
+    model.reset_progress();
+    model.increase_level();
 }

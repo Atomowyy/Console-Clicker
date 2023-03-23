@@ -14,13 +14,14 @@ int game_model::get_level() {
     return level;
 }
 int game_model::get_multiplier() {
-    return 0;
+    return multiplier;
 }
 void game_model::add_points(int p) {
     this->points += p;
 }
 void game_model::increase_level() {
     this->level +=1;
+    this->multiplier=multiplier*2;
 }
 void game_model::increase_progress() {
     this->progress += 1;
